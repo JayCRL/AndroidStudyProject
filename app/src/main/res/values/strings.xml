@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="default_usernameHint">please input username</string>
+    <string name="password_hint">please input password</string>
+    <string name="login_button">login in</string>
+    <string name="app_version">version: 1.0</string>
+    <string name="logo">logo</string>
+    <string name="switchText">change</string>
+    <string name="name">name</string>
+    <string name="mykey">mykey</string>
+    <string name="mykeyDefaultValue">0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nameval">nameval</string>
+    <string name="welcome">Welcome</string>
+    <string name="youchoose">"You choose： "</string>
+
+</resources>

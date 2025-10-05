@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="com.example.myapplication11.AndroidViewModelTest" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.LoginPage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 1. Logo 图片（依赖 guideline 和 guideline2） -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="173dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/logo"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline"
+                app:srcCompat="@drawable/android"
+                tools:ignore="ImageContrastCheck" />
+
+            <!-- 账号输入框（依赖 guideline3） -->
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/default_usernameHint"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+            <!-- 密码输入框（依赖 editTextText 和 guideline4） -->
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/editTextText"
+                app:layout_constraintStart_toStartOf="@+id/editTextText"
+                app:layout_constraintTop_toTopOf="@+id/guideline4"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- 登录按钮（依赖 editTextTextPassword 和 guideline5） -->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:text="@string/login_button"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/Orange"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+            <!-- Switch（依赖 guideline2 和 guideline3） -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/switchText"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+            <!-- 进度条（依赖 button 和 textView） -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="95dp"
+                android:layout_height="64dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <!-- 版本文本（依赖 guideline6） -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+            <!-- 评分条（依赖 textView） -->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:progressTint="@color/Orange"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" /> <!-- 新增 -->
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="189dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="请输入姓名"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:layout_constraintVertical_bias="0.312" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

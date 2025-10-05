@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--说明xml的版本号和编码字符格式-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--声明安卓的命名空间和工具的命名空间 即文件路径-->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/android"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/android"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication11"
+        tools:targetApi="31" >
+        <!--允许备份    数据提取规则 完整备份的规则文件 图标资源 应用程序名称 圆形图标 从左到右的布局 应用全局的主题 声明版本以屏蔽低版本警告-->
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <!--Activity的名字 支持导出 意图过滤器：代表可以被用作哪些 main：应用的入口处 并设置为显示图标在桌面上-->
+    </application>
+</manifest>
