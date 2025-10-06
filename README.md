@@ -20,11 +20,11 @@ Welcome to follow me to study~
 
 Welcome the author to contact me. Your courses is so good!!!
 
-![1759714718329](preView/login.png)
-
-![1759714928944](preView/detail.png)
-
-![1759714826944](preView/home.png)
+<p align="center">
+  <img src="preView/login.png" width="30%" height="100%"/>
+  <img src="preView/detail.png" width="25%" height="100%" />
+  <img src="preView/home.png" width="30%" height="100%" />
+</p>
 
 # Pre Introduction
 
