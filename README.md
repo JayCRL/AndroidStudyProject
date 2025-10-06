@@ -1,6 +1,6 @@
 # All in all
 
-This project is aimed at record my android studying progress 
+This project is aimed at recording my android studying progress 
 
 Not only watch the videos: 
 
