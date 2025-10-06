@@ -18,7 +18,7 @@ At the same time,I will not use AI to code straightly and try to understand almo
 
 Welcome to follow me to study~
 
-Welcome the author to contact me. Your courses is so good!!!
+Welcome the author to contact me. Your courses are so good!!!
 
 <p align="center">
   <img src="preView/login.png" width="30%" height="100%"/>
