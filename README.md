@@ -6,6 +6,8 @@ Not only watch the videos:
 
 [youtube.com/watch?v=6pJqYvge8TY&list=PLPh5-KovAYtFyX5elSTT9wEMt0HxMhR7L](https://www.youtube.com/watch?v=6pJqYvge8TY&list=PLPh5-KovAYtFyX5elSTT9wEMt0HxMhR7L) 
 
+https://www.bilibili.com/video/BV1w4411t7UQ/?spm_id_from=333.1387.upload.video_card.click
+
 but also add my own question and the knowledge I learned through AI.
 
 also I try to reteach them. So you can also regard this project as a note or study project .
@@ -18,11 +20,11 @@ Welcome to follow me to study~
 
 Welcome the author to contact me. Your courses is so good!!!
 
-![1759714718329](C:\Users\25566\AppData\Roaming\Typora\typora-user-images\1759714718329.png)
+![1759714718329](preView\login.png)
 
-![1759714928944](C:\Users\25566\AppData\Roaming\Typora\typora-user-images\1759714928944.png)
+![1759714928944](preview\detail.png)
 
-![1759714826944](C:\Users\25566\AppData\Roaming\Typora\typora-user-images\1759714826944.png)
+![1759714826944](preView\home.png)
 
 # Pre Introduction
 
