@@ -22,7 +22,7 @@ Welcome the author to contact me. Your courses is so good!!!
 
 ![1759714718329](preView/login.png)
 
-![1759714928944](preview/detail.png)
+![1759714928944](preView/detail.png)
 
 ![1759714826944](preView/home.png)
 
