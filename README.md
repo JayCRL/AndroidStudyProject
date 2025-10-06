@@ -6,29 +6,35 @@ Not only watch the videos:
 
 [youtube.com/watch?v=6pJqYvge8TY&list=PLPh5-KovAYtFyX5elSTT9wEMt0HxMhR7L](https://www.youtube.com/watch?v=6pJqYvge8TY&list=PLPh5-KovAYtFyX5elSTT9wEMt0HxMhR7L) 
 
-but also add my own question and the knowlege I learned through AI.
+but also add my own question and the knowledge I learned through AI.
 
 also I try to reteach them. So you can also regard this project as a note or study project .
 
-I will also try to use the english as my working language and try to practice it.So welcome to let me know there is any mistakes.
+I will also try to use the English as my working language and try to practice it. So welcome to let me know there are any mistakes.
 
-At the same time,I will not use AI to code straightly and try to find out almost every line of my code.
+At the same time,I will not use AI to code straightly and try to understand almost every line of my code.
 
 Welcome to follow me to study~
 
-Welcome the author to contact me.Your courses is so good!!!
+Welcome the author to contact me. Your courses is so good!!!
+
+![1759714718329](C:\Users\25566\AppData\Roaming\Typora\typora-user-images\1759714718329.png)
+
+![1759714928944](C:\Users\25566\AppData\Roaming\Typora\typora-user-images\1759714928944.png)
+
+![1759714826944](C:\Users\25566\AppData\Roaming\Typora\typora-user-images\1759714826944.png)
 
 # Pre Introduction
 
-The Android Project runs depend on the JVM.So It's easier to study Android if you are familer with the Java and it's suitable for people who have the Spring backEnd basics.
+The Android Project runs depend on the JVM. So It's easier to study Android if you are familiar with the Java and it's suitable for people who have the Spring BackEnd basics.
 
-## If you are orignaly from backEnd:
+## If you are originally from backend:
 
-As for the database.Android use SqLite.It's make multifing database more easy.It use Dao,Database,Entity three component structure.As for the Dao structure,You will write SQL strightly,it's more easier than using Mybatis-plus 
+As for the database. Android use SQLite. It's make multiring database more easy. It use Dao,Database,Entity three component structure. As for the Dao structure,You will write SQL straightly, it's more easier than using Mybatis-plus 
 
-## If you are orignaly from IOS SwiftUI
+## If you are original from IOS SwiftUI
 
-Because of I only know the most of the swiftUI. So I can only figure out the differences between Android and SwiftUI.More diffrences were welcome you to add~
+Because of I only know the most of the SwiftUI. So I can only figure out the differences between Android and SwiftUI. More differences were welcome you to add~
 
 ##### The whole feeling
 
@@ -36,23 +42,23 @@ IOS is just like the complete machine,You should strictly follow what he want yo
 
 ##### Security and freedom
 
-At the same time,It's error checking is more strict than Android.Like guard and ! As for android it's easier to throw NullPointException then the app will quit quickly.So you should check your programe more strictly.
+At the same time,It's error checking is more strict than Android. Like guard and ! As for android it's easier to throw NullPointException then the app will quit quickly. So you should check your program more strictly.
 
 ##### MVVM 
 
-the mvvm is a designed modle.The view will flash automaticly when finding the data changed.
+the mvvm is a designed modle. The view will flash automatically when finding the data changed.
 
-In android, you should built this stucture by hand, in IOS,SwiftUI.You just need to declare the data kind and the system will action it automaticuly.
+In android, you should built this structure by hand, in IOS,SwiftUI. You just need to declare the data kind and the system will action it automatically.
 
 ## The difficult point to study: 
 
-#### diffucult process to init:
+#### difficult process to init:
 
-Because it is running above the Android system.So we should coperate with the system and will init so many kinds of object.And you should init through the factory and so many exists method.
+Because it is running above the Android system. So we should cooperate with the system and will init so many kinds of object. And you should init through the factory and so many exists method.
 
-Don't be worry, you just need to first write it once ,and know the whole process then everytime when you forget it, You can find what you have wrote quickly and review it. Then you will be more and more familer with it.
+Don't be worry, you just need to first write it once ,and know the whole process then every time when you forget it, You can find what you have wrote quickly and review it. Then you will be more and more familiar with it.
 
-Also of primary note is that you should write your own project, I recommaned that you just regard videos as a dictionary to find and check.It will may diffcult to create and just use what you have just learned.So if you are still difficlut to do it. Watch the videos again and again , any questions you can ask AI to answer. I also think it's a better way to use ai to answer the question while let it to code. It's dangerous, and it also not good for you to make a progress."Don't hand in the code skills and depend on Ai so much".
+Also of primary note is that you should write your own project, I recommended that you just regard videos as a dictionary to find and check. It will may difficult to create and just use what you have just learned. So if you are still difficult to do it. Watch the videos again and again , any questions you can ask AI to answer. I also think it's a better way to use ai to answer the question while let it to code. It's dangerous, and it also not good for you to make a progress."Don't hand in the code skills and depend on Ai so much".
 
 You should be more profession than Ai, only the you can find the job.
 
@@ -74,11 +80,11 @@ You should be more profession than Ai, only the you can find the job.
 
 ####  Res
 
-​	*the resourse and value using in use app, manage all of them in one place*
+​	*the resource and value using in use app, manage all of them in one place*
 
 ​	support the dark and light mode.
 
-​	support the multify language you just need to add the target language version and the system will use it automatically.
+​	support the multifil language you just need to add the target language version and the system will use it automatically.
 
 ​	If you want to use them just use 
 
@@ -86,7 +92,7 @@ You should be more profession than Ai, only the you can find the job.
 String defaultName = getApplication().getResources().getString(R.string.nameval);
 ```
 
-   notice: R.string.nameval is just can help us get the id of the resourses if we want to use it we need to add the *getApplication().getResources.getString.*
+   notice: R.string.nameval is just can help us get the id of the resources if we want to use it we need to add the *getApplication().getResources.getString.*
 
 ​	getApplication means get the  object of the app itself . Others is easy to understand. Is a key-value function to get the value.
 
@@ -102,11 +108,11 @@ String defaultName = getApplication().getResources().getString(R.string.nameval)
 
 ###### 	Component:
 
-###### 				 component desined by yourself
+###### 				 component designed by yourself
 
 ###### 	ViewModel: 
 
-###### 				the object to manage the multify data
+###### 				the object to manage the multifil data
 
 ###### 	Entity: 
 
@@ -122,23 +128,23 @@ String defaultName = getApplication().getResources().getString(R.string.nameval)
 
 ###### 	shp:
 
-###### 			    sharedPreferences: local data store object and fuction
+###### 			    sharedPreferences: local data store object and function
 
 ##### Clarify activity and fagment
 
 ###### Activity:
 
-​				A indepent screen model
+​				A independent screen model
 
 ​				load xml through  setContentView ()
 
 ​				manage Activity through Stack
 
-###### 		     LifeCycle:
+###### 		     Lifecycle:
 
 ​				onCreate()   		*init data* 
 
-​				onStart(); 			 *vitualble but can't act with user*
+​				onStart(); 			 virtual but can't act with user*
 
 ​				onResume();		*can act*
 
@@ -162,7 +168,7 @@ String defaultName = getApplication().getResources().getString(R.string.nameval)
 
 5. onDetach（）
 
-   ​		Activity start first and destory last
+   ​		Activity start first and destroy last
 
    ​		Activity oncreate->Start()->resume()
 

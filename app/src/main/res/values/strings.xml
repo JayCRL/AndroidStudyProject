@@ -9,7 +9,6 @@
     <string name="name">name</string>
     <string name="mykey">mykey</string>
     <string name="mykeyDefaultValue">0</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nameval">nameval</string>
     <string name="welcome">Welcome</string>

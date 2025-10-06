@@ -23,11 +23,9 @@ public class Word {
     public String getChineseMeaning() {
         return chineseMeaning;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public void setWord(String word) {
         this.word = word;
     }

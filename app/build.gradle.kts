@@ -1,11 +1,9 @@
 plugins {
     id("com.android.application")
 }
-
 android {
     namespace = "com.example.myapplication11"
     compileSdk = 34 // AGP 8.2.1 支持 compileSdk 34
-
     defaultConfig {
         applicationId = "com.example.myapplication11"
         minSdk = 24
