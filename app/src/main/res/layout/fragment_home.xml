@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="跳转"
-        app:backgroundTint="@color/Orange"
+        app:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Insert"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="@+id/DeleteButton"
         app:layout_constraintEnd_toStartOf="@+id/DeleteButton"
         app:layout_constraintHorizontal_bias="0.5"
@@ -70,6 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
+        app:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/InsertButton"
@@ -80,20 +82,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="@+id/ClearButton"
         app:layout_constraintEnd_toStartOf="@+id/ClearButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/InsertButton" />
+        app:layout_constraintTop_toBottomOf="@+id/InsertButton"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/ClearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clear"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/UpdateButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/UpdateButton"
-        app:layout_constraintTop_toBottomOf="@+id/DeleteButton" />
+        app:layout_constraintTop_toTopOf="@+id/UpdateButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
