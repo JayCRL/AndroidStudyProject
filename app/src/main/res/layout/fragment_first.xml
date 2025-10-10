@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstFragment">
+    tools:context=".Fragment.firstFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -23,11 +23,24 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="207dp"
-        android:layout_height="237dp"
+        android:layout_height="0dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="140dp"
+        android:layout_marginBottom="167dp"
         android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/actionBtn1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/actionBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="139dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
