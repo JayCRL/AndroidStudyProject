@@ -2,6 +2,9 @@ package com.example.myapplication11.Entity;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+
+import java.util.Date;
+
 @Entity
 public class Word {
     @PrimaryKey(autoGenerate = true)
@@ -10,6 +13,26 @@ public class Word {
     private String word;
     @ColumnInfo(name="chinese_meaning")
     private String chineseMeaning;
+    @ColumnInfo(name = "isShowChinese")
+    private boolean isShowChinese;
+    @ColumnInfo(name="AddTime")
+    private String addTime;
+
+    public boolean getIsShowChinese() {
+        return isShowChinese;
+    }
+
+    public void setIsShowChinese(boolean isShowChinese) {
+        this.isShowChinese = isShowChinese;
+    }
+
+    public String getAddTime() {
+        return addTime;
+    }
+
+    public void setAddTime(String addTime) {
+        this.addTime = addTime;
+    }
     public Word(String word, String chineseMeaning) {
         this.word=word;
         this.chineseMeaning=chineseMeaning;

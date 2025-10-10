@@ -65,6 +65,7 @@ public class ListStudyAndDatabaseMigration extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -75,14 +76,14 @@ public class ListStudyAndDatabaseMigration extends Fragment {
         listLiveData=wordViewModel.getAllwordsLive();
         //get recyclerView
         //new Adapter
-        myAdapter=new MyAdapter();
+        myAdapter=new MyAdapter(wordViewModel);
         recyclerView=binding.recyclerView;
         //setWords
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         //binding adapter to recyclerView
         recyclerView.setAdapter(myAdapter);
         //set Observe
-        wordViewModel.getAllwordsLive().observe(getActivity(), words -> {
+        wordViewModel.getAllwordsLive().observe(getViewLifecycleOwner(), words -> { // 关键修改：getActivity() → this
             Toast.makeText(getContext(),"Data Changed~",Toast.LENGTH_SHORT).show();
             myAdapter.setWords(words);
             myAdapter.notifyDataSetChanged();
