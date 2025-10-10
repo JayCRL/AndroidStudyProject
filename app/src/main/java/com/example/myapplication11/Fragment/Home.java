@@ -71,10 +71,8 @@ public class Home extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-       wordViewModel = new ViewModelProvider(
-               requireActivity(),
-               new SavedStateViewModelFactory(requireActivity().getApplication(), requireActivity())
-       ).get(WordViewModel.class);
+        //新写法
+       wordViewModel = new ViewModelProvider(this).get(WordViewModel.class);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

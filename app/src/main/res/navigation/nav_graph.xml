@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginPage">
+    app:startDestination="@id/listStudyAndDatabaseMigration">
 
     <fragment
         android:id="@+id/detail"
@@ -49,4 +49,9 @@
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
+    <fragment
+        android:id="@+id/listStudyAndDatabaseMigration"
+        android:name="com.example.myapplication11.Fragment.ListStudyAndDatabaseMigration"
+        android:label="fragment_list_study_and_database_migration"
+        tools:layout="@layout/fragment_list_study_and_database_migration" />
 </navigation>

@@ -73,10 +73,12 @@ public class Detail extends Fragment {
     @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        androidViewModelTest = new ViewModelProvider(
-                requireActivity(),
-                new SavedStateViewModelFactory(requireActivity().getApplication(), requireActivity())
-        ).get(AndroidViewModelTest.class);
+//        androidViewModelTest = new ViewModelProvider(
+//                requireActivity(),
+//                new SavedStateViewModelFactory(requireActivity().getApplication(), requireActivity())
+//        ).get(AndroidViewModelTest.class);
+        //新写法用这个 自动获取Activity
+        androidViewModelTest=new ViewModelProvider(this).get(AndroidViewModelTest.class);
         String name= getArguments().getString("btname");
         Button button=getView().findViewById(R.id.button3);
         button.setText(name);
